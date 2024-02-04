@@ -1,0 +1,117 @@
+html {
+    font-size: 16px;
+}
+
+html * {
+    font-size: 1rem;
+}
+
+#px-demo .px1 {
+    font-size: 12px;
+}
+
+#px-demo .px2 {
+    font-size: 13px;
+}
+
+#px-demo .px3 {
+    font-size: 14px;
+}
+
+#px-demo .px4 {
+    font-size: 15px;
+}
+
+#px-demo .px5 {
+    font-size: 16px;
+}
+
+#px-demo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#px-demo div {
+    margin: 7px;
+    border: black solid 1px;
+    padding: 7px;
+}
+
+#em-demo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#em-demo div {
+    margin: 7px;
+    border: black solid 1px;
+    padding: 7px;
+}
+
+#em-demo .em-outer {
+    font-size: 15px;
+}
+
+#em-demo .em1 {
+    font-size: 1.8em;
+}
+
+#em-demo .em2 {
+    font-size: 1em;
+}
+
+#em-demo .em3 {
+    font-size: 1.2em;
+}
+
+#em-demo .em4 {
+    font-size: 1.4em;
+}
+
+#em-demo .em5 {
+    font-size: 1.6em;
+}
+
+#em-demo .em5 .em5-inner-em1 {
+    font-size: 1.8em;
+}
+
+#em-demo .em5 .em5-inner-em2 {
+    font-size: 2.0em;
+}
+
+#rem-demo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#rem-demo div {
+    margin: 7px;
+    border: black solid 1px;
+    padding: 7px;
+}
+
+#rem-demo .rem-em1 {
+    font-size: 1.4em;
+}
+
+#rem-demo .rem2 {
+    font-size: 1rem;
+}
+
+#rem-demo .rem3 {
+    font-size: 16px;
+}
+
+#rem-demo .rem4 {
+    font-size: 1.2rem;
+}
+
+#rem-demo .rem5 {
+    font-size: 1.4rem;
+}
+
+#rem-demo .rem6 {
+    color: yellowgreen;
+    font-size: 1.4em;
+}
