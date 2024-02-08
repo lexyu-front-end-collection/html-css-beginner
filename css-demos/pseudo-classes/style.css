@@ -1,0 +1,52 @@
+a {
+	font-size: 30px;
+}
+
+a:link {
+	color: rgb(221, 100%, 74%);
+}
+
+a:hover {
+	color: hsl(221, 100%, 86%);
+	font-size: 100px;
+}
+
+a:active {
+	color: hsl(240, 100%, 50%);
+	font-size: 100px;
+}
+
+a:visited {
+	color: hsl(0, 0%, 75%);
+}
+
+li {
+	font-size: 50px;
+}
+
+li:hover {
+	color: darkred;
+}
+
+li:not(:hover) {
+	color: grey;
+}
+
+/* 3n+2, even */
+li:nth-child(even) {
+	background-color: hsl(60, 100%, 50%);
+}
+
+.greet-div {
+	font-size: 50px;
+}
+
+#greeting:hover p {
+	display: block;
+}
+
+#greeting p {
+	background-color: lightblue;
+	padding: 10px;
+	display: none;
+}

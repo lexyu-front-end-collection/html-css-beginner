@@ -1,0 +1,48 @@
+h1 {
+	font-size: 3em;
+}
+
+h1::first-letter {
+	font-size: 2em;
+	font-style: italic;
+}
+
+p {
+	font-size: 20px;
+}
+
+p::first-line {
+	background-color: hsl(60, 70%, 79%);
+}
+
+p::selection {
+	color: wheat;
+	background-color: darkgreen;
+}
+
+ul {
+	font-size: 30px;
+	/* list-style: lower-roman; */
+}
+
+#fruit li::marker {
+	content: "🍀";
+	color: hsl(120, 98%, 48%);
+	font-size: 1.2em;
+}
+
+#fruit li::before {
+	/* content: "🎯 "; */
+}
+
+#apple::after {
+	content: "🍎"
+}
+
+#orange::after {
+	content: "🍊"
+}
+
+#banana::after {
+	content: "🍌"
+}
