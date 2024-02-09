@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infinite Scroll Animation Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Infinite Scroll Animation</h1>
+
+	<div class="scroller" id="tags-scroller" data-direction="left" data-speed="slow">
+		<ul class="tag-list scroller_inner">
+			<li>Java</li>
+			<li>Kotlin</li>
+			<li>NodeJS</li>
+			<li>Python</li>
+			<li>Go</li>
+			<li>Rust</li>
+			<li>JavaScript</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<!-- <li class="test">Java</li>
+			<li>Kotlin</li>
+			<li>NodeJS</li>
+			<li>Python</li>
+			<li>Go</li>
+			<li>Rust</li>
+			<li>JavaScript</li>
+			<li>HTML</li>
+			<li>CSS</li> -->
+		</ul>
+	</div>
+
+	<div class="scroller" id="tags-scroller" data-direction="right" data-speed="fast">
+		<ul class="tag-list scroller_inner">
+			<li>Java</li>
+			<li>Kotlin</li>
+			<li>NodeJS</li>
+			<li>Python</li>
+			<li>Go</li>
+			<li>Rust</li>
+			<li>JavaScript</li>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ul>
+	</div>
+
+	<div class="scroller" id="imgs-scroller" data-direction="left" data-speed="fast">
+		<div class="scroller_inner">
+			<img src="https://icon.icepanel.io/Technology/svg/Tauri.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Spring.svg" alt="">
+			<img style="background-color: antiquewhite; border-radius: 95%;"
+				src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/MySQL.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Gradle.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Jenkins.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/OpenAPI.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Postman.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/SonarQube.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Swagger.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Apache-Tomcat.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/IntelliJ-IDEA.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Jupyter.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/BitBucket.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Redis.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Git.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="">
+			<!-- <img class="test" src="https://icon.icepanel.io/Technology/svg/Tauri.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Spring.svg" alt="">
+			<img style="background-color: antiquewhite; border-radius: 95%;"
+				src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/MySQL.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Gradle.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Jenkins.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/OpenAPI.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Postman.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/SonarQube.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Swagger.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Apache-Tomcat.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/IntelliJ-IDEA.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Jupyter.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/BitBucket.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Redis.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Git.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt=""> -->
+		</div>
+	</div>
+
+	<div class="scroller" id="imgs-scroller" data-direction="right" data-speed="slow">
+		<div class="scroller_inner">
+			<img src="https://icon.icepanel.io/Technology/svg/Tauri.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Spring.svg" alt="">
+			<img style="background-color: antiquewhite; border-radius: 95%;"
+				src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/MySQL.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Gradle.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Jenkins.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/OpenAPI.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Postman.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/SonarQube.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Swagger.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Apache-Tomcat.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/IntelliJ-IDEA.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/png-shadow-512/Jupyter.png" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/BitBucket.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Redis.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/Git.svg" alt="">
+			<img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="">
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+
+</body>
+
+</html>

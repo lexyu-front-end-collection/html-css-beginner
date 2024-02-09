@@ -1,0 +1,9 @@
+.square {
+	--padding: 36px;
+	width: 300px;
+	height: 200px;
+	background: aqua;
+	font-family: sans-serif;
+	padding: var(--padding);
+	margin: calc(var(--padding) *2);
+}

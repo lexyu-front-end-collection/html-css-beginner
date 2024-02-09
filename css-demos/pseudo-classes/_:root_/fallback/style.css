@@ -1,0 +1,9 @@
+:root {
+	--primary-text-color: blue;
+	--primary-secondary-color: green;
+}
+
+.text {
+	color: var(--primary-text-color, var(--primary-secondary-color, red));
+	font-size: 100px;
+}

@@ -1,0 +1,23 @@
+:root {
+	--primary-text-color: #ff0000;
+}
+
+html {
+	background-color: wheat;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.heading {
+	color: darkgreen;
+}
+
+.text-body {
+	color: var(--primary-text-color);
+}
+
+.search {
+	color: var(--primary-text-color);
+}
