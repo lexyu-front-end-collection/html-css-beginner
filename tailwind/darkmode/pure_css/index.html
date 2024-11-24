@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Dark Mode Demo</title>
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f3f4f6;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #111827;
+            --bg-secondary: #1f2937;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        .toggle-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--bg-secondary);
+            border: none;
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+        }
+
+        .card {
+            padding: 1.5rem;
+            background-color: var(--bg-secondary);
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .card-text {
+            color: var(--text-secondary);
+        }
+
+        .list {
+            padding-left: 1.25rem;
+            list-style-type: disc;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="toggle-btn" onclick="toggleTheme()">
+            Toggle Dark Mode
+        </button>
+
+        <div class="card">
+            <h2 class="card-title">CSS Variables Card</h2>
+            <p class="card-text">
+                This card uses CSS custom properties (variables).
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Features List</h2>
+            <ul class="list">
+                <li>使用 CSS Variables 定義主題</li>
+                <li>集中管理顏色變數</li>
+                <li>需要寫自定義 CSS</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            html.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+        }
+    </script>
+</body>
+
+</html>
